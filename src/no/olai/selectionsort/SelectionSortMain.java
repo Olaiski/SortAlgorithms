@@ -6,25 +6,27 @@ import java.util.Arrays;
 
 /**
  * Selection Sort
+ *
  *  Traverse array, look for largest element, swap it with the
  *  last element in the unsorted partition. At that point, swapped
  *  element will be in it's correct sorted position.
  *
- *  In place Algorithm
- *  O(n^2) - Quadratic, generally less swapping than Bubble Sort.
- *  Unstable algorithm
+ * Info:
+ *  - In place Algorithm
+ *  - O(n^2) - Quadratic, generally less swapping than Bubble Sort.
+ *  - Unstable algorithm
  */
 
 public class SelectionSortMain {
     public static void main(String[] args) {
 
-        int[] arr = {20, 35, -15, 7, 55, 1, -22};
+        int[] arr = MyUtil.getIntArray();
 
-        System.out.println(Arrays.toString(arr));
+        MyUtil.printArray(arr);
 
         selectionSort(arr);
 
-        System.out.println(Arrays.toString(arr));
+        MyUtil.printArray(arr);
 
     }
 

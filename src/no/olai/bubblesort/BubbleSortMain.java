@@ -6,11 +6,14 @@ import java.util.Arrays;
 
 /**
  * Bubble Sort
+ *
  *  Degrades quickly
  *  Partitions the array into a sorted partition and unsorted partition
+ *  "Bubbles" from left to right / bottom to top
  *
- *  In place algorithm, stable sort.
- *  O (n^2) time complexity - Quadratic, one of the least efficient sort algorithms.
+ * Info:
+ *  - In place algorithm, stable sort.
+ *  - O(n^2) time complexity - Quadratic, one of the least efficient sort algorithms.
  *
  */
 
@@ -18,13 +21,13 @@ public class BubbleSortMain {
 
     public static void main(String[] args) {
 
-        int[] arr = {20, 35, -15, 7, 55, 1, -22};
+        int[] arr = MyUtil.getIntArray();
 
-        System.out.println(Arrays.toString(arr));
+        MyUtil.printArray(arr);
 
         bubbleSort(arr);
 
-        System.out.println(Arrays.toString(arr));
+        MyUtil.printArray(arr);
     }
 
 
